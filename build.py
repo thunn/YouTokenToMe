@@ -1,3 +1,8 @@
+# build code adapted from:
+# https://github.com/mdgoldberg/poetry-cython-example
+# based on poetry issue:
+# https://github.com/python-poetry/poetry/issues/2789
+
 import os
 import shutil
 from distutils.command.build_ext import build_ext
