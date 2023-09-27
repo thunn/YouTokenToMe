@@ -19,8 +19,8 @@ extensions = [
 ]
 
 with io.open(
-        os.path.join(os.path.abspath(os.path.dirname(__file__)), "README.md"),
-        encoding="utf-8",
+    os.path.join(os.path.abspath(os.path.dirname(__file__)), "README.md"),
+    encoding="utf-8",
 ) as f:
     LONG_DESCRIPTION = "\n" + f.read()
 
@@ -33,7 +33,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/vkcom/youtokentome",
     python_requires=">=3.5.0",
-    install_requires=["Click>=7.0"],
+    install_requires=["Click>=7.0", "Cython==0.29.14"],
     entry_points={"console_scripts": ["yttm = youtokentome.yttm_cli:main"]},
     author="Ivan Belonogov",
     license="MIT",
@@ -51,4 +51,3 @@ setup(
     ],
     ext_modules=cythonize(extensions),
 )
-
