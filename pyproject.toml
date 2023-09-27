@@ -1,2 +1,2 @@
 [build-system]
-requires = ["poetry-core", "Cython"]
+requires = ["setuptools", "Cython"]
