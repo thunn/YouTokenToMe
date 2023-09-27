@@ -11,6 +11,9 @@ python = "^3.8"
 click = "^8.1.7"
 cython = "^3.0.2"
 
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
 
 [build-system]
 requires = ["poetry-core", "Cython"]
